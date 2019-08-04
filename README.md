@@ -21,7 +21,7 @@ implementation 'com.deventium:livestate:1.0.0'
 
 * **Patryk Kizak** - *Initial work*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/XiteZ/LiveState/contributors) who participated in this project.
 
 ## License
 
