@@ -11,15 +11,7 @@ android {
     defaultConfig {
         minSdkVersion(15)
         targetSdkVersion(28)
-        versionCode = 1
-        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
     }
 
     kotlinOptions{
@@ -30,8 +22,9 @@ android {
 
 dependencies {
     val lifecycleVersion = "2.0.0"
-    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
+
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${rootProject.extra["kotlinVersion"]}")
+    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
     testImplementation("junit:junit:4.12")
     testImplementation ("androidx.arch.core:core-testing:$lifecycleVersion")
     testImplementation ("org.mockito:mockito-core:3.0.0")
